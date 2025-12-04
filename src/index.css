@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-soft-pink: #FFE5E5;
+  --color-soft-blue: #E5F5FF;
+  --color-soft-yellow: #FFF9E5;
+  --color-soft-purple: #F5E5FF;
+  --color-mint-green: #E5FFF5;
+  --color-coral-red: #FF6B6B;
+  --color-teal-accent: #4ECDC4;
+  --color-cream-white: #FFF9F0;
+
+  --font-headings: "Pangolin", cursive;
+  --font-body: "Pangolin", cursive;
+
+  --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-button: 0 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+@layer base {
+  body {
+    @apply bg-cream-white text-gray-800 font-body;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-headings text-gray-900;
+  }
+}
+
+@layer utilities {
+  .bubble {
+    @apply absolute rounded-full opacity-60 animate-bounce;
+  }
+}
