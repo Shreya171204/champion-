@@ -68,11 +68,11 @@ export default function AddUserPage() {
             {/* Right column with cloud note and monkey image (spans cols 9-12) */}
             <aside className="lg:col-span-4 flex flex-col items-center justify-start relative">
               {/* Left-side cloud note (refined shape & placement) */}
-               <div className="absolute -top-2 -left-16 md:-top-4 md:-left-30 lg:-top-6 lg:-left-35 z-40 w-64 md:w-80 lg:w-[24rem]">
+              <div className="absolute -top-2 -left-16 md:-top-4 md:-left-30 lg:-top-6 lg:-left-35 z-40 w-64 md:w-80 lg:w-[24rem]">
                 <svg viewBox="0 0 400 260" className="w-full h-auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="cloud note">
                   <defs>
                     <filter id="cloudShadow2" x="-50%" y="-50%" width="200%" height="200%">
-                      <feDropShadow dx="0" dy="10" stdDeviation="8" floodColor="#000" floodOpacity="0.18"/>
+                      <feDropShadow dx="0" dy="10" stdDeviation="8" floodColor="#000" floodOpacity="0.18" />
                     </filter>
                     <linearGradient id="cloudInner2" x1="0" x2="0" y1="0" y2="1">
                       <stop offset="0%" stopColor="#ffffff" />
@@ -83,7 +83,7 @@ export default function AddUserPage() {
 
                   {/* Outer thick outline */}
                   <path d="M40 140 C20 100, 40 60, 80 60 C96 34, 140 22, 164 48 C196 28, 244 36, 260 64 C298 72, 312 104, 284 132 C316 138, 338 168, 310 190 C270 218, 204 214, 164 204 C128 220, 88 216, 40 140 Z"
-                    fill="none" stroke="#000" strokeWidth="14" strokeLinejoin="round" filter="url(#cloudShadow2)"/>
+                    fill="none" stroke="#000" strokeWidth="14" strokeLinejoin="round" filter="url(#cloudShadow2)" />
 
                   {/* Pastel inner ring */}
                   <path d="M40 140 C20 100, 40 60, 80 60 C96 34, 140 22, 164 48 C196 28, 244 36, 260 64 C298 72, 312 104, 284 132 C316 138, 338 168, 310 190 C270 218, 204 214, 164 204 C128 220, 88 216, 40 140 Z"
@@ -94,11 +94,11 @@ export default function AddUserPage() {
                     fill="#FEFEFA" />
 
                   {/* Centered note text */}
-                  <foreignObject x="46" y="56" width="308" height="140">
+                  <foreignObject x="36" y="56" width="308" height="140">
                     <div xmlns="http://www.w3.org/1999/xhtml" className="w-full h-full flex items-center justify-center p-2">
-                      <p className="text-center text-[18px] md:text-[20px] lg:text-[22px] leading-tight font-semibold text-[#6B6B6B]" style={{fontFamily: '"Baloo 2", "Fredoka One", cursive'}}>
+                      <p className="text-center text-[16px] md:text-[18px] lg:text-[20px] leading-tight font-semibold text-[#6B6B6B]" style={{ fontFamily: '"Baloo 2", "Fredoka One", cursive' }}>
                         Users will receive
-                        <br />  
+                        <br />
                         email invitations after
                         <br />
                         they are added.
