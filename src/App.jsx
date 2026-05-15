@@ -9,6 +9,9 @@ import FeatureCardsSection from './components/FeatureCardsSection';
 import AddUserPage from './pages/AddUserPage';
 import AddUserPage2 from './pages/adduserpage2';
 import AddUserPage3 from './pages/AddUserPage3';
+import LoginPage from './pages/LoginPage';
+import SignupPage from './pages/SignupPage';
+import ProfilePage from './pages/ProfilePage';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -49,6 +52,9 @@ function App() {
         <Route path="/add-user" element={<AddUserPage />} />
         <Route path="/add-user-2" element={<AddUserPage2 />} />
         <Route path="/add-user-3" element={<AddUserPage3 />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
       </Routes>
     </BrowserRouter>
   );
